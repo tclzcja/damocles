@@ -1,0 +1,97 @@
+﻿body > nav > article > #nav-type > select {
+    background-image: url("../../image/entity/FFFFFF/user.png");
+}
+
+#input-name {
+    top: 80px;
+    left: 80px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-name > input {
+        background-image: url("../../image/entity/333333/name.png");
+    }
+
+#input-email {
+    top: 162px;
+    left: 80px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-email > input {
+        background-image: url("../../image/entity/333333/email.png");
+    }
+
+#input-role {
+    top: 244px;
+    left: 80px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-role > select {
+        background-image: url("../../image/entity/333333/role.png");
+    }
+
+#placeholder-1 {
+    top: 326px;
+    left: 80px;
+    width: 400px;
+    bottom: 80px;
+}
+
+#placeholder-2 {
+    top: 80px;
+    left: 482px;
+    width: 402px;
+    height: 244px;
+}
+
+#placeholder-3 {
+    top: 572px;
+    left: 480px;
+    width: 404px;
+    bottom: 80px;
+}
+
+#placeholder-4 {
+    top: 80px;
+    left: 884px;
+    right: 80px;
+    bottom: 80px;
+}
+
+#input-password {
+    top: 326px;
+    left: 482px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-password > input {
+        background-image: url("../../image/entity/333333/password.png");
+    }
+
+#input-password-new {
+    top: 408px;
+    left: 482px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-password-new > input {
+        background-image: url("../../image/entity/333333/password.png");
+    }
+
+#input-password-new-confirm {
+    top: 490px;
+    left: 482px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-password-new-confirm > input {
+        background-image: url("../../image/entity/333333/password.png");
+    }

@@ -1,0 +1,112 @@
+﻿body > main > article > section {
+    background-color: #222;
+    color: white;
+}
+
+    body > main > article > section[id*='input'] > * {
+        background-color: #222;
+        color: white;
+    }
+
+#input-email {
+    bottom: 50%;
+    margin-bottom: 1px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-email > input {
+        background-image: url("../../image/entity/FFFFFF/email.png");
+    }
+
+#input-password {
+    top: 50%;
+    margin-top: 1px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 80px;
+}
+
+    #input-password > input {
+        background-image: url("../../image/entity/FFFFFF/password.png");
+    }
+
+#input-login {
+    top: 50%;
+    margin-top: -81px;
+    bottom: 50%;
+    margin-bottom: -81px;
+    left: 50%;
+    margin-left: 202px;
+    width: 162px;
+}
+
+    #input-login > input {
+        background-image: url("../../image/entity/FFFFFF/power.png");
+        background-size: 30% 30%;
+    }
+
+#placeholder-4 {
+    height: 20px;
+    width: 20px;
+    bottom: 50%;
+    margin-bottom: 83px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#placeholder-3 {
+    height: 40px;
+    width: 40px;
+    bottom: 50%;
+    margin-bottom: 41px;
+    left: 50%;
+    margin-left: -242px;
+}
+
+#damocles {
+    height: 120px;
+    width: 120px;
+    bottom: 50%;
+    margin-bottom: 83px;
+    right: 50%;
+    margin-right: 202px;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-image: url("../../image/logo/damocles.png");
+}
+
+#placeholder-2 {
+    height: 20px;
+    width: 40px;
+    bottom: 50%;
+    margin-bottom: 183px;
+    right: 50%;
+    margin-right: 324px;
+}
+
+#riot {
+    height: 120px;
+    width: 120px;
+    bottom: 50%;
+    margin-bottom: 205px;
+    right: 50%;
+    margin-right: 324px;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-image: url("../../image/logo/riot.png");
+}
+
+#placeholder-1 {
+    height: 120px;
+    left: 0px;
+    bottom: 50%;
+    margin-bottom: 205px;
+    right: 50%;
+    margin-right: 446px;
+}

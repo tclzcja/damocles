@@ -1,0 +1,548 @@
+﻿@-webkit-keyframes spaceboots {
+    0% {
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+    }
+
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        -webkit-transform: translate(0px, 2px) rotate(0deg);
+    }
+
+    40% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        -webkit-transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI';
+    border: none;
+    outline: none;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #333;
+}
+
+input, textarea, select {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 80px;
+    padding-right: 20px;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, background-image 0.2s, left 0.2s, right 0.2s, opacity 0.2s;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 25px 25px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    line-height: 20px;
+}
+
+    input:hover, textarea:hover, select:hover {
+        box-shadow: 0 0 30px black;
+    }
+
+    input:active, textarea:active, select:active {
+        box-shadow: none;
+    }
+
+    input[type='button'] {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        background-position: center center;
+    }
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-left: 76px;
+}
+
+optgroup, option {
+    color: black;
+    background-color: white;
+}
+
+    optgroup[disabled], option[disabled] {
+        display: none;
+    }
+
+textarea {
+    resize: none;
+    padding-top: 30px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+::-webkit-inner-spin-button, ::-webkit-clear-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #EEE;
+    }
+
+/* --------------------------------------------------- Global element definition ends --------------------------------------------------- */
+
+body > header {
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    /* background-image: url("../../image/background/3.jpg"); */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+    opacity: 0.25;
+}
+
+body > nav {
+    position: fixed;
+    background-color: transparent;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    border-bottom: solid 10px black;
+    border-top: solid 10px black;
+    transition: opacity 0.2s, top 0.2s;
+    opacity: 0;
+}
+
+    body > nav > article > section {
+        display: inline-block;
+        background-color: transparent;
+        cursor: pointer;
+        transition: box-shadow 0.2s, background-color 0.2s, height 0.2s, color 0.2s, width 0.2s, top 0.2s;
+        color: white;
+        height: 80px;
+        vertical-align: top;
+        position: fixed;
+        overflow-y: hidden;
+        top: 0px;
+    }
+
+        body > nav > article > section > * {
+            color: white;
+            background-color: black;
+        }
+
+        body > nav > article > section:hover {
+            z-index: 10;
+            box-shadow: 0 0 30px black;
+        }
+
+        body > nav > article > section > *[disabled] {
+        }
+
+    body > nav > article > #nav-logo {
+        left: 0px;
+        width: 78px;
+        background-image: url("../../image/logo/logo.png");
+        background-color: transparent;
+        background-size: 80px 80px;
+        background-position: center center;
+        box-shadow: none;
+        cursor: default;
+    }
+
+    body > nav > article > #nav-type {
+        left: 80px;
+        width: 400px;
+    }
+
+    body > nav > article > #nav-object {
+        left: 482px;
+        right: 80px;
+    }
+
+        body > nav > article > #nav-object > select {
+            background-image: url("../../image/entity/FFFFFF/object.png");
+        }
+
+    body > nav > article > #nav-profile {
+        width: 78px;
+        right: 0px;
+        line-height: 80px;
+        text-align: right;
+        background-repeat: no-repeat;
+        background-position: right 25px top 25px;
+        background-size: 30px 30px;
+        background-image: url("../../image/entity/FFFFFF/user.png");
+        background-color: black;
+        overflow: hidden;
+    }
+
+        body > nav > article > #nav-profile > input {
+            position: absolute;
+            left: 20px;
+            height: 80px;
+            width: 360px;
+            transition: box-shadow 0.2s;
+            z-index: 10;
+        }
+
+        body > nav > article > #nav-profile > header {
+            transition: top 0.2s;
+            background-color: #333;
+            color: white;
+            height: 80px;
+            top: -80px;
+            right: 0px;
+            width: 400px;
+            position: absolute;
+            padding-right: 20px;
+        }
+
+        body > nav > article > #nav-profile > input:hover {
+            box-shadow: 0 0 20px black;
+            z-index: 11;
+        }
+
+        body > nav > article > #nav-profile > input:active {
+            box-shadow: none;
+        }
+
+        body > nav > article > #nav-profile > input#nav-profile-logout {
+            top: 400px;
+            background-color: #F66;
+            background-image: url("../../image/entity/FFFFFF/power.png");
+        }
+
+        body > nav > article > #nav-profile > input#nav-profile-change-password {
+            top: 318px;
+            background-color: #F90;
+            background-image: url("../../image/entity/FFFFFF/password.png");
+        }
+
+        body > nav > article > #nav-profile:hover {
+            height: 500px;
+            width: 400px;
+            background-color: white;
+            color: #333;
+            z-index: 1112;
+        }
+
+            body > nav > article > #nav-profile:hover > header {
+                top: 0px;
+            }
+
+body > main {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    bottom: 20px;
+    right: 0px;
+    background-color: transparent;
+    z-index: 1;
+    transition: margin-left 1s, opacity 0.2s;
+    opacity: 0;
+}
+
+    body > main > article {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+        body > main > article > section {
+            position: absolute;
+            transition: opacity 0.2s;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+            body > main > article > section[id*='input'] {
+                background-repeat: no-repeat;
+                background-size: 30px 30px;
+                background-position: 25px 25px;
+            }
+
+                body > main > article > section[id*='input'] > * {
+                    background-color: white;
+                    color: #333;
+                }
+
+            body > main > article > section[id*='list'] {
+                top: 80px;
+                left: 78px;
+                right: 78px;
+                bottom: -2px;
+                background-color: transparent;
+            }
+
+                body > main > article > section[id*='list'] > table {
+                    border-spacing: 2px;
+                    border-collapse: separate;
+                    background-color: transparent;
+                }
+
+                    body > main > article > section[id*='list'] > table tr:last-child td {
+                        height: auto;
+                        background-color: rgba(255, 255, 255, 0.5);
+                    }
+
+                    body > main > article > section[id*='list'] > table td {
+                        height: 40px;
+                        background-color: white;
+                        position: relative;
+                        z-index: 22;
+                    }
+
+                        body > main > article > section[id*='list'] > table td:nth-child(1) {
+                            width: auto;
+                            background-repeat: no-repeat;
+                            background-size: 20px 20px;
+                            background-position: left 30px center;
+                        }
+
+                            body > main > article > section[id*='list'] > table td:nth-child(1)[data-extension='.png'] {
+                                background-image: url("../../../image/entity/FF6666/image.png");
+                            }
+
+                        body > main > article > section[id*='list'] > table td:nth-child(2) {
+                            width: 500px;
+                        }
+
+                        body > main > article > section[id*='list'] > table td:last-child {
+                            width: 80px;
+                            transition: box-shadow 0.2s, background-color 0.2s, background-image 0.2s;
+                        }
+
+                            body > main > article > section[id*='list'] > table td:last-child.delete {
+                                background-repeat: no-repeat;
+                                background-size: 20px 20px;
+                                background-position: center center;
+                                background-image: url("../../../image/entity/FF0000/delete.png");
+                                cursor: pointer;
+                            }
+
+                                body > main > article > section[id*='list'] > table td:last-child.delete:hover {
+                                    box-shadow: 0 0 30px black;
+                                    background-color: #F00;
+                                    z-index: 24;
+                                    background-image: url("../../../image/entity/FFFFFF/delete.png");
+                                }
+
+            body > main > article > section[id*='submit'] {
+                width: 300px;
+                color: white;
+                line-height: 80px;
+                font-size: 30px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                body > main > article > section[id*='submit'] > input {
+                    padding: 0px;
+                    text-align: center;
+                    color: white;
+                }
+
+            body > main > article > section[id*='submit-create'] {
+                left: 80px;
+                top: 80px;
+                height: 500px;
+            }
+
+                body > main > article > section[id*='submit-create'] > input {
+                    background-color: #6C0;
+                }
+
+            body > main > article > section[id*='submit-delete'] {
+                left: 80px;
+                top: 582px;
+                bottom: 80px;
+            }
+
+                body > main > article > section[id*='submit-delete'] > input {
+                    background-color: #F33;
+                }
+
+            body > main > article > section[id*='submit-update'] {
+                left: 382px;
+                top: 80px;
+                bottom: 80px;
+            }
+
+                body > main > article > section[id*='submit-update'] > input {
+                    background-color: #FC3;
+                }
+
+            body > main > article > section[id*='submit-result'] {
+                left: 684px;
+                top: 80px;
+                right: 80px;
+                width: auto;
+                bottom: 80px;
+                transition: background-color 0.2s, background-image 0.2s;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: auto 250px;
+                font-size: 20px;
+                line-height: 40px;
+                color: #FFF;
+                text-shadow: 0 0 5px #000;
+            }
+
+                body > main > article > section[id*='submit-result'] > p:first-child {
+                    position: absolute;
+                    bottom: 50%;
+                    width: 100%;
+                }
+
+                body > main > article > section[id*='submit-result'] > p:last-child {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                }
+
+                body > main > article > section[id*='submit-result'].loading {
+                    background-color: white;
+                    background-image: url("../../image/function/loading.gif");
+                }
+
+                body > main > article > section[id*='submit-result'].good {
+                    background-color: #6C0;
+                    background-image: url("../../image/entity/FFFFFF/good.png");
+                }
+
+            body > main > article > section[id]:hover {
+                z-index: 300;
+            }
+
+            body > main > article > section[id] > *[disabled] {
+                opacity: 0;
+            }
+
+body > footer {
+    position: fixed;
+    height: 40px;
+    left: -2px;
+    bottom: 2px;
+    right: -2px;
+    background-color: transparent;
+}
+
+    body > footer > table {
+        border-spacing: 2px;
+        border-collapse: separate;
+    }
+
+        body > footer > table td {
+            z-index: 1;
+            vertical-align: bottom;
+            height: 40px;
+        }
+
+            body > footer > table td:last-child {
+                width: auto;
+            }
+
+            body > footer > table td > div {
+                width: 100%;
+                height: 20px;
+                background-color: rgba(0, 0, 0, 0.5);
+                transition: background-color 0.2s, height 0.2s, box-shadow 0.2s;
+                cursor: pointer;
+            }
+
+                body > footer > table td > div.active {
+                    background-color: black;
+                    z-index: 9;
+                }
+
+                body > footer > table td > div:hover {
+                    background-color: black;
+                    box-shadow: 0 0 30px black;
+                    z-index: 9;
+                }
+
+                body > footer > table td > div:active {
+                    box-shadow: none;
+                }
+
+/* Effect */
+
+.loading {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}

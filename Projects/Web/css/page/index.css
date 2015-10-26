@@ -1,0 +1,528 @@
+﻿body > nav > article > #nav-type {
+    width: auto;
+    right: 80px;
+}
+
+    body > nav > article > #nav-type > select {
+        background-image: url("../../image/entity/FFFFFF/index.png");
+    }
+
+#prev, #next {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px 40px;
+    transition: background-color 0.2s, background-size 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+#prev {
+    top: 50%;
+    margin-top: -302px;
+    right: 50%;
+    margin-right: 607px;
+    background-image: url("../../image/entity/333333/prev.png");
+    opacity: 0;
+}
+
+#next {
+    bottom: 50%;
+    margin-bottom: -302px;
+    left: 50%;
+    margin-left: 607px;
+    background-image: url("../../image/entity/333333/next.png");
+}
+
+    #prev:hover, #next:hover {
+        background-color: white;
+        box-shadow: 0 0 30px black;
+    }
+
+    #prev:active, #next:active {
+        box-shadow: none;
+    }
+
+#list-incomplete-tasks {
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+}
+
+    #list-incomplete-tasks > div {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.2s, box-shadow 0.2s, opacity 0.2s;
+        z-index: 1;
+    }
+
+        #list-incomplete-tasks > div > h3 {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            height: 30px;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 30px;
+            padding-left: 15px;
+            background-color: rgba(0, 0, 0, 0.25);
+            color: white;
+            transition: color 0.2s;
+        }
+
+        #list-incomplete-tasks > div > h1 {
+            display: block;
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        #list-incomplete-tasks > div > h2 {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 12px;
+            padding-left: 15px;
+            cursor: pointer;
+            transition: color 0.2s;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        #list-incomplete-tasks > div.expired {
+            background-color: #F33;
+        }
+
+            #list-incomplete-tasks > div.expired > h3 {
+                color: #F33;
+            }
+
+        #list-incomplete-tasks > div.close {
+            background-color: #F90;
+        }
+
+            #list-incomplete-tasks > div.close > h3 {
+                color: #F90;
+            }
+
+        #list-incomplete-tasks > div.normal {
+            background-color: #69F;
+        }
+
+            #list-incomplete-tasks > div.normal > h3 {
+                color: #69F;
+            }
+
+        #list-incomplete-tasks > div[data-id]:hover {
+            background-color: white;
+            box-shadow: 0 0 30px black;
+            z-index: 111;
+        }
+
+            #list-incomplete-tasks > div[data-id]:hover > h3 {
+                color: white;
+            }
+
+            #list-incomplete-tasks > div[data-id]:hover > h1 {
+                color: black;
+            }
+
+            #list-incomplete-tasks > div[data-id]:hover > h2 {
+                color: #999;
+            }
+
+        #list-incomplete-tasks > div[data-id]:active {
+            box-shadow: none;
+        }
+
+        #list-incomplete-tasks > div:nth-child(1) {
+            top: 50%;
+            margin-top: -302px;
+            left: 50%;
+            margin-left: -605px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(2) {
+            top: 50%;
+            margin-top: -302px;
+            left: 50%;
+            margin-left: -403px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(3) {
+            top: 50%;
+            margin-top: -302px;
+            left: 50%;
+            margin-left: -201px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(4) {
+            top: 50%;
+            margin-top: -302px;
+            left: 50%;
+            margin-left: 1px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(5) {
+            top: 50%;
+            margin-top: -302px;
+            left: 50%;
+            margin-left: 203px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(6) {
+            top: 50%;
+            margin-top: -302px;
+            left: 50%;
+            margin-left: 405px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(7) {
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: -605px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(8) {
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: -403px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(9) {
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: -201px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(10) {
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: 1px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(11) {
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: 203px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(12) {
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: 405px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(13) {
+            top: 50%;
+            margin-top: 102px;
+            left: 50%;
+            margin-left: -605px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(14) {
+            top: 50%;
+            margin-top: 102px;
+            left: 50%;
+            margin-left: -403px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(15) {
+            top: 50%;
+            margin-top: 102px;
+            left: 50%;
+            margin-left: -201px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(16) {
+            top: 50%;
+            margin-top: 102px;
+            left: 50%;
+            margin-left: 1px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(17) {
+            top: 50%;
+            margin-top: 102px;
+            left: 50%;
+            margin-left: 203px;
+        }
+
+        #list-incomplete-tasks > div:nth-child(18) {
+            top: 50%;
+            margin-top: 102px;
+            left: 50%;
+            margin-left: 405px;
+        }
+
+        #list-incomplete-tasks > div.blur {
+            opacity: 0.1;
+        }
+
+#panel-task {
+    top: 80px;
+    bottom: 80px;
+    left: 300px;
+    right: 300px;
+    background-color: white;
+    box-shadow: 0 0 30px white;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.2s;
+    padding: 40px;
+}
+
+    #panel-task.open {
+        opacity: 1;
+        z-index: 11111;
+    }
+
+    #panel-task > div {
+        width: 400px;
+        line-height: 100%;
+    }
+
+    #panel-task > #panel-task-name {
+        font-size: 30px;
+        padding-bottom: 20px;
+        border-bottom: dashed 1px #CCC;
+        color: black;
+    }
+
+    #panel-task > #panel-task-project {
+        font-size: 16px;
+        color: #999;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: dashed 1px #CCC;
+    }
+
+    #panel-task > #panel-task-status {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        border-bottom: dashed 1px #CCC;
+    }
+
+        #panel-task > #panel-task-status.expired {
+            color: red;
+        }
+
+        #panel-task > #panel-task-status.close {
+            color: #F90;
+        }
+
+        #panel-task > #panel-task-status.normal {
+            color: #69F;
+        }
+
+        #panel-task > #panel-task-status > span {
+            padding-left: 8px;
+            opacity: 0.5;
+            font-weight: normal;
+        }
+
+    #panel-task > #panel-task-attachments {
+        padding-top: 200px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        border-bottom: dashed 1px #CCC;
+        color: black;
+    }
+
+        #panel-task > #panel-task-attachments > span {
+            color: #999;
+        }
+
+    #panel-task > #panel-task-attachments-list {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 480px;
+        right: 0px;
+        height: auto;
+        width: auto;
+        background-color: #CCC;
+        white-space: normal;
+    }
+
+    #panel-task > #panel-task-attachments-file {
+        display: none;
+    }
+
+div.attachment {
+    height: 180px;
+    width: 120px;
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+    div.attachment > div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 120px;
+        height: 150px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 40px 40px;
+        background-image: url("../../image/entity/Transparent/transparent.png");
+        transition: background-image 0.2s, background-color 0.2s;
+        cursor: pointer;
+    }
+
+        div.attachment > div:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-width: 0 16px 16px 0;
+            border-style: solid;
+            border-color: #CCC #CCC #FFF #FFF;
+            box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.2s;
+        }
+
+    div.attachment > a {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 30px;
+        line-height: 12px;
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    div.attachment[data-status='1'] > div {
+        background-color: #EEE;
+    }
+
+    div.attachment[data-status='1'] > a {
+        cursor: default;
+    }
+
+    div.attachment[data-status='2'] > div {
+        background-image: url("../../image/entity/333333/file.png");
+    }
+
+    div.attachment[data-status='2'] > a {
+        text-decoration: underline;
+    }
+
+    div.attachment[data-status='2'][data-extension*='doc'] > div {
+        background-image: url("../../image/entity/295598/doc.png");
+    }
+
+    div.attachment[data-status='2'][data-extension*='xls'] > div {
+        background-image: url("../../image/entity/1F7246/xls.png");
+    }
+
+    div.attachment[data-status='2'][data-extension*='jpg'] > div {
+        background-image: url("../../image/entity/333399/image.png");
+    }
+
+    div.attachment[data-status='2'][data-extension*='png'] > div {
+        background-image: url("../../image/entity/333399/image.png");
+    }
+
+    div.attachment[data-status='2'][data-extension*='pdf'] > div {
+        background-image: url("../../image/entity/D24726/pdf.png");
+    }
+
+    div.attachment[data-status='2'][data-extension*='ppt'] > div {
+        background-image: url("../../image/entity/D04626/ppt.png");
+    }
+
+    div.attachment[data-status][data-extension] > div:hover {
+        background-image: url("../../image/entity/333333/upload.png");
+        background-color: #DDD;
+    }
+
+        div.attachment[data-status][data-extension] > div:hover:before {
+            border-color: #CCC #CCC #DDD #DDD;
+        }
+
+#panel-task > #panel-task-complete {
+    position: absolute;
+    width: 400px;
+    height: 80px;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    background-color: #6C3;
+}
+
+    #panel-task > #panel-task-complete[disabled] {
+        background-color: white;
+        box-shadow: none;
+        color: #CCC;
+        text-align: left;
+        opacity: 1;
+    }
+
+#input-project {
+    top: 80px;
+    left: 80px;
+    height: 80px;
+    width: 400px;
+}
+
+    #input-project > select {
+        background-image: url("../../image/entity/333333/name.png");
+    }
+
+#input-task {
+    top: 162px;
+    left: 80px;
+    height: 80px;
+    width: 400px;
+}
+
+    #input-task > select {
+        background-image: url("../../image/entity/333333/task.png");
+    }
+
+#placeholder-1 {
+    top: 244px;
+    left: 80px;
+    width: 400px;
+    bottom: 80px;
+}
+
+#list-uploaded-attachments {
+    top: 80px;
+    left: 482px;
+    right: 80px;
+    bottom: 80px;
+    background-color: #CCC;
+    overflow: auto;
+    padding-bottom: 40px;
+}
+
+    #list-uploaded-attachments > div > div:hover {
+        background-image: url("../../image/entity/333333/download.png");
+    }

@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Projects\Api\Api.csproj", "{9AC90D22-F7FC-43B6-97C5-FEB9D4308ACE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{E518A597-B2A0-459D-B8C0-042630996F69}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{9F360843-3EC0-4779-B281-04F44CBE77BC}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\Api-WAWS-dev.json = PublishScripts\Configurations\Api-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B731E8DA-F8D3-4ECC-AEA1-2E6C057104E6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B57BD2BF-4C43-4239-9943-7D44931AC54B}"
+	ProjectSection(SolutionItems) = preProject
+		.tfignore = .tfignore
+		dropTable.sql = dropTable.sql
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web(6)", "http://localhost:54415", "{C49B57E0-EBC4-4997-A38D-2DB685DD24AD}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54415"
+		Debug.AspNetCompiler.PhysicalPath = "Projects\Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54415\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54415"
+		Release.AspNetCompiler.PhysicalPath = "Projects\Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54415\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Projects\Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tclzcja.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Projects\\Api\\Api.csproj
+		SccProjectName1 = Projects/Api
+		SccLocalPath1 = Projects\\Api
+		SccWebProject2 = true
+		SccProjectUniqueName2 = http://localhost:54415
+		SccProjectName2 = Projects/Web
+		SccLocalPath2 = Projects\\Web
+		SccProjectEnlistmentChoice2 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AC90D22-F7FC-43B6-97C5-FEB9D4308ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC90D22-F7FC-43B6-97C5-FEB9D4308ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC90D22-F7FC-43B6-97C5-FEB9D4308ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC90D22-F7FC-43B6-97C5-FEB9D4308ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49B57E0-EBC4-4997-A38D-2DB685DD24AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49B57E0-EBC4-4997-A38D-2DB685DD24AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49B57E0-EBC4-4997-A38D-2DB685DD24AD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49B57E0-EBC4-4997-A38D-2DB685DD24AD}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F360843-3EC0-4779-B281-04F44CBE77BC} = {E518A597-B2A0-459D-B8C0-042630996F69}
+	EndGlobalSection
+EndGlobal
