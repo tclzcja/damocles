@@ -1,0 +1,4 @@
+\packages\*
+!\Web\packages\repositories.config
+\Deployment\bin
+\$tf
